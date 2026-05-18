@@ -1,0 +1,35 @@
+# Dados pessoais — nunca commitar
+PROFILE.md
+PDI.md
+
+# Credenciais
+.env
+
+# Resultados e histórico de análises (dados pessoais)
+results/
+career_analysis.db
+
+# Claude Code — sessão local
+.claude/
+
+# Playwright — snapshots temporários
+.playwright-mcp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
