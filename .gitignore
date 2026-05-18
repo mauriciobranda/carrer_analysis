@@ -1,6 +1,5 @@
 # Dados pessoais — nunca commitar
-PROFILE.md
-PDI.md
+context/
 
 # Credenciais
 .env

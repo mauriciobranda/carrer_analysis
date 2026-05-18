@@ -796,8 +796,8 @@ def main() -> None:
     if not args.url:
         sys.exit("Erro: informe a URL da vaga (ou use --recalibrate para recalibrar um JSON existente).")
 
-    profile = load_file("PROFILE.md")
-    pdi     = load_file("PDI.md")
+    profile = load_file("context/PROFILE.md")
+    pdi     = load_file("context/PDI.md")
 
     job_content = get_job_content(args.url, args.file)
     if not job_content.strip():

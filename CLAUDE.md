@@ -35,7 +35,7 @@ Após exibir o resultado inicial, o script entra automaticamente no modo de cali
 3. Uma segunda chamada ao Gemini recalibra apenas o Skills score (0–40pts)
 4. O script exibe o diff antes/depois e salva o resultado calibrado
 
-Objetivo: corrigir o viés de auto-avaliação positiva do PROFILE.md.
+Objetivo: corrigir o viés de auto-avaliação positiva do `context/PROFILE.md`.
 
 **Extração da vaga:**
 1. Scraping direto
@@ -47,8 +47,8 @@ Objetivo: corrigir o viés de auto-avaliação positiva do PROFILE.md.
 | Arquivo | Função |
 |---|---|
 | `linkedin_analyzer.py` | Script principal |
-| `PROFILE.md` | Perfil profissional do candidato (base da comparação) |
-| `PDI.md` | Plano de desenvolvimento individual — 3 verticais: Tech, Business, Construído |
+| `context/PROFILE.md` | Perfil profissional do candidato (base da comparação) |
+| `context/PDI.md` | Plano de desenvolvimento individual — 3 verticais: Tech, Business, Construído |
 | `.env` | `GEMINI_API_KEY` e `GEMINI_MODEL` |
 | `results/` | JSONs com histórico de análises |
 | `career_analysis.db` | SQLite com todas as análises |
@@ -72,4 +72,4 @@ Requer `.env` com `GEMINI_API_KEY=...`
 
 Mauricio Toscan Brandalise — Gerente de Pré-vendas Técnicas | CoE IA & Hiperautomação, 12+ anos, mercado BR/LATAM.
 
-> Nota: `PROFILE.md` ainda tem campos `[...]` para preencher com dados reais.
+> Nota: `context/PROFILE.md` ainda tem campos `[...]` para preencher com dados reais.
